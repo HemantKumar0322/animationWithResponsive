@@ -1,0 +1,293 @@
+/* **********universal css start********** */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+button {
+  color: #ffffff;
+  width: 150px;
+  height: 60px;
+  font-size: 16px;
+  background-color: #9494e4;
+  border-radius: 50px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #9494e4;
+  color: #9494e4;
+  transition: 0.8s;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* **********universal css end********** */
+/* *************************************** */
+/* **********header css start********** */
+
+.header-bg {
+  background-image: linear-gradient(to right, #060505bd, #060505bd), url(../img/banner_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 500px; */
+  margin-bottom: 100px;
+}
+
+.logo {
+  width: 140px;
+}
+
+.header-content {
+  font-size: 78px;
+  margin: 200px 0 100px 0;
+  /* animation-duration: 2s; */
+  /* animation-name: slidein; */
+}
+
+@media screen and (max-width: 1100px) {
+  .header-content {
+    font-size: 48px;
+    margin: 50px 0 100px 0;
+  }
+}
+
+/* @keyframes slidein {
+  from {
+    margin-left: 30%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 13%;
+    width: 100%;
+  }
+} */
+
+/* **********header css end********** */
+/* **********main css start********** */
+/* *********************************** */
+/* **********service section css start********** */
+
+.services {
+  border: 2px solid grey;
+  padding: 40px 40px;
+}
+
+.services:hover {
+  border: 2px solid #799bff;
+  transition: 0.5s;
+}
+
+/* **********service section css end********** */
+/* ************************************* */
+/* **********about section css start********** */
+
+
+.about-area {
+  height: 700px;
+}
+
+.about-content {
+  margin-left: 100px;
+  width: 440px;
+}
+
+@media screen and (max-width: 1100px) {
+  .about-content {
+    margin-left: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-content {
+    margin-left: 50px;
+    width: 440px;
+  }
+}
+
+/* **********about section css end********** */
+/* ************************************* */
+/* **********feature section css start********** */
+
+.feature-r-h {
+  height: 340px;
+  position: relative !important;
+}
+
+@media screen and (max-width: 576px) {
+  .feature-r-h {
+    height: 240px;
+  }
+}
+
+.hover-effect {
+  /* transition: 1s; */
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.featurs-containor>div:hover .hover-effect {
+  /* transition: 1s; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* **********feature section css end********** */
+/* ************************************* */
+/* **********work section css start********** */
+
+.work-area {
+  height: 700px;
+}
+
+.working-area-content {
+  width: 526px;
+  /* margin-left: 100px; */
+}
+
+.working-area-content .w-a-btn {
+  width: 70px;
+  height: 70px;
+}
+
+/* **********work section css end********** */
+/* ************************************* */
+/* **********team section css start********** */
+
+.team-area {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.profile-links {
+  bottom: 0px;
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.team-profile:hover .profile-links{
+  opacity: 1;
+  transform: translate(0 , -30px);
+}
+
+
+
+/* **********team section css end********** */
+/* ************************************* */
+/* **********feedback portfolio section css start********** */
+
+.portfolio-bg {
+  background-image: linear-gradient(to right, #060505bd, #060505bd), url(../img/portfolio_bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 500px; */
+  margin-bottom: 100px;
+  height: 600px;
+}
+
+.portfolio-content img {
+  width: 50px;
+  height: 50px;
+}
+
+.portfolio-bg button {
+  border: none;
+}
+
+/* **********feedback portfolio section css end********** */
+/* ************************************* */
+/* **********contect section css start********** */
+
+.wrapper-contect-text {
+  margin: 100px 0px;
+}
+
+.contact-area {
+  margin-bottom: 100px;
+}
+
+.c-t-h {
+  height: 60px;
+  /* margin: 20px 0px; */
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.contact-area input {
+  outline: none;
+  border-radius: 25px;
+  border: 1px solid #646363;
+}
+
+.contact-area textarea {
+  outline: none;
+  border-radius: 25px;
+}
+
+/* **********contect section css end********** */
+/* ********************************************** */
+/* **********footer section css start********** */
+
+
+.footer {
+  height: 400px;
+  padding-top: 100px;
+}
+
+.media-link {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.media-link:hover {
+  background-color: #a3a3a3;
+  transition: 0.5s;
+}
+
+.media-link img {
+  width: 20px;
+}
+
+/* **********footer section css end********** */
+
+@media screen and (max-width: 576px) {
+  .wrapper-media-link{
+    display: flex;
+    justify-content: center !important;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-nav{
+    flex-wrap: wrap;
+  }
+}
